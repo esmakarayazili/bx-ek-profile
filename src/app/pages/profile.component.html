@@ -25,11 +25,36 @@
           <div fxFlex>
             <h3 md-subheader>Education</h3>
             <!--adds education code-by-color #140956-->
+            schools = [
+  {
+    name: 'Generic School',
+    start: new Date('2003-09-01'),
+    end: new Date('2009-07-01'),
+  },
+  {
+    name: 'Generic High School',
+    start: new Date('2009-09-01'),
+    end: new Date('2012-06-01'),
+  },
+  {
+    name: 'Generic Univeristy',
+    start: new Date('2012-09-01'),
+    end: new Date(),
+  }
+];
             <md-list-item *ngFor="let school of schools">
               <md-icon md-list-icon class="mat-list-icon">school</md-icon>
-              <h4 md-line class="text-wrap">{{school.name}}</h4>
+              <h4 md-line class="text-wrap">{{Grundschule Riedenberg}}</h4>
               <i md-line class="text-wrap">{{school.major}}</i>
-              <p md-line class="text-wrap"> {{school.start | date:'MM/yyyy'}} - {{school.end | date:'MM/yyyy'}}</p>
+              <p md-line class="text-wrap"> {{school.start | date:'09/1999'}} - {{school.end | date:'07/2004'}}</p>
+               <h4 md-line class="text-wrap">{{Johann-Friedrich-Von-Cotta-Schule}}</h4>
+              <i md-line class="text-wrap">{{school.major}}</i>
+              <p md-line class="text-wrap"> {{school.start | date:'09/2004'}} - {{school.end | date:'07/2009'}}</p>
+               <h4 md-line class="text-wrap">{{Hochschule Esslingen}}</h4>
+              <i md-line class="text-wrap">{{school.major}}</i>
+              <p md-line class="text-wrap"> {{school.start | date:'03/2015'}} - {{school.end | date:'03/2019'}}</p>
+              
+              
             </md-list-item>
           </div>
           <md-divider style="margin-top: 1em"></md-divider>
